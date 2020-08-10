@@ -1,0 +1,160 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #757575;
+  overflow-x: hidden;
+}
+
+.container {
+  -webkit-perspective: 800px;
+          perspective: 800px;
+  /* Styling */
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 4px;
+  /* Center it */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.card {
+  /* Styling */
+  width: 700px;
+  height: 420px;
+  background: #141414;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.side {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  /* Fix Chrome rendering bug */
+  -webkit-transform: rotate(0deg) translateZ(1px);
+          transform: rotate(0deg) translateZ(1px);
+}
+
+.front, .back {
+  background: #15CCC0;
+  padding: 30px;
+}
+
+p {
+  margin: 0.8em 0;
+}
+
+.name {
+  color: #3B3B3B;
+  margin-bottom: 0;
+}
+
+.tagline {
+  color: #001F3F;
+  font-family: Helvetica, Tahoma, Arial, "STKaiti", "STFangsong", "STSong", "STHeiti", "KaiTi", "FangSong", "SimSun", "NSimSun", "SimHei", "Microsoft YaHei", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-seri;
+  margin-top: 3px;
+  margin-bottom: 10px;
+}
+
+.content {
+  position: relative;
+  left: 5%;
+  right: 95%;
+  width: 90%;
+  background-color: inherit;
+  color: red;
+}
+
+.content .title {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  position: relative;
+  left: -3%;
+  font-weight: bold;
+  font-family: Helvetica, Tahoma, Arial, "STKaiti", "STFangsong", "STSong", "STHeiti", "KaiTi", "FangSong", "SimSun", "NSimSun", "SimHei", "Microsoft YaHei", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-seri;
+}
+
+.content .columns {
+  font-family: Helvetica, Tahoma, Arial, "STSong", "STFangsong", "STKaiti", "STHeiti", "SimSun", "NSimSun", "FangSong", "KaiTi", "SimHei", "Microsoft YaHei", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", serif;
+  position: relative;
+  width: 100%;
+  padding-bottom: 10px;
+  margin: unset;
+  border: unset;
+  padding-left: unset;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.content .columns ul {
+  margin-top: 3%;
+}
+
+.content .columns li {
+  margin: 5px;
+}
+
+.content .columns ul, .content .columns li {
+  font-size: 90%;
+  list-style: square;
+  color: mediumvioletred;
+}
+
+.content .columns ul p, .content .columns li p {
+  font-size: 90%;
+  margin-top: 3px;
+  margin-bottom: 5px;
+}
+
+.content .columns .column {
+  position: relative;
+}
+
+.content .columns .seperator {
+  width: 1px;
+  background-color: #CC99CC;
+}
+
+.info {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  color: #3b3b3b;
+}
+
+.info p {
+  margin-top: 0.7ex;
+  margin-bottom: 0.7ex;
+}
+
+.info a:hover {
+  background-color: red;
+}
+
+.info .property {
+  font-family: "lucida grande", lucida, "Helvetica Neue", Helvetica, Tahoma, Arial, "STFangsong", "STSong", "STHeiti", "STKaiti", "FangSong", "SimSun", "NSimSun", "SimHei", "KaiTi", "Microsoft YaHei", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-seri;
+}
+
+.info .property .key {
+  color: blueviolet;
+  font-weight: bold;
+}
+
+.info .property .value {
+  color: darkred;
+}
+/*# sourceMappingURL=style.css.map */

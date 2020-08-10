@@ -1,0 +1,197 @@
+// ref: [网页设计常用色彩搭配表](http://www.divcss5.com/peise/)
+
+
+// English Fonts
+
+// Chinese Fonts
+// <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC|Noto+Sans+SC|Ma+Shan+Zheng" rel="stylesheet">
+// <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC|Noto+Sans+TC" rel="stylesheet">
+// @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC|Noto+Sans+SC|Ma+Shan+Zheng');
+// @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC|Noto+Sans+TC');
+// @import url('https://fonts.loli.com/css2?family=Noto+Serif+SC|Noto+Sans+SC|Ma+Shan+Zheng');
+// @import url('https://fonts.loli.com/css2?family=Noto+Serif+TC|Noto+Sans+TC');
+
+
+$padding:30px;
+
+* { box-sizing: border-box; }
+
+body { background: #757575; overflow-x: hidden; }
+.container {
+  perspective: 800px;
+  
+  /* Styling */  
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  // text-transform: uppercase;
+  letter-spacing: 4px;
+  
+  /* Center it */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.card {
+  /* Styling */
+  width: 700px;
+  height: 420px;
+  background: rgb(20,20,20);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);  
+}
+.side {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  /* Fix Chrome rendering bug */
+  transform: rotate(0deg) translateZ(1px);
+}
+.front, .back {
+  background: #15CCC0;
+  padding: $padding;
+}
+
+p {
+  margin: 0.8em 0;
+}
+
+.name {
+  color: #3B3B3B;
+  margin-bottom: 0;
+}
+.tagline {
+  color: #001F3F;
+  font-family:
+    Helvetica, Tahoma, Arial,
+    "STKaiti", "STFangsong", "STSong", "STHeiti",
+    "KaiTi", "FangSong", "SimSun", "NSimSun", "SimHei", "Microsoft YaHei",
+    "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei",
+    sans-seri;
+  margin-top: 3px;
+  margin-bottom: 10px;
+}
+
+$content-lr-margin: 5%;
+.content {
+  position: relative;
+  left: $content-lr-margin;
+  right: (100% - $content-lr-margin);
+  width: (100% - 2 * $content-lr-margin);
+  background-color: inherit;
+  color: red;
+
+  .title {
+    margin: {
+      top: 5px;
+      bottom: 5px;
+    }
+    position: relative;
+    left: -3%;
+    font-weight: bold;
+    font-family:
+      Helvetica, Tahoma, Arial,
+      "STKaiti", "STFangsong", "STSong", "STHeiti",
+      "KaiTi", "FangSong", "SimSun", "NSimSun", "SimHei", "Microsoft YaHei",
+      "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei",
+      sans-seri;
+  }
+
+  .columns {
+    font-family:
+      Helvetica, Tahoma, Arial,
+      "STSong", "STFangsong", "STKaiti", "STHeiti",
+      "SimSun", "NSimSun", "FangSong", "KaiTi", "SimHei", "Microsoft YaHei",
+      "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei",
+      serif;
+    position: relative;
+    width: 100%;
+    // height: auto;
+    padding-bottom: 10px;
+    // overflow: hidden;
+    // &::after {
+    //   clear: both;
+    // }
+    margin: unset;
+    border: unset;
+    padding-left: unset;
+
+    display: flex;
+    // justify-content: space-around;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+
+    ul {
+      margin-top: 3%;
+      // padding-left: 20px;
+    }
+
+    li {
+      margin: 5px;
+    }
+
+    ul, li {
+      font-size: 90%;
+      list-style: square;
+      color: mediumvioletred;
+
+      p {
+        font-size: 90%;
+        margin-top: 3px;
+        margin-bottom: 5px;
+      }
+    }
+
+    .column {
+      position: relative;
+    }
+
+    $sep_width: 1px;
+    .seperator {
+      // position: relative;
+      // left: calc(50% - #{$sep_width}/2);
+      // right: calc(50% + #{$sep_width}/2);
+      width: $sep_width;
+      background-color: #CC99CC;
+    }
+  }
+}
+
+.info {
+  position: absolute;
+  bottom: $padding;
+  left: $padding;
+  color: #3b3b3b;
+
+  p {
+    margin: {
+      top: 0.7 * 1ex;
+      bottom: 0.7 * 1ex;
+    }
+  }
+
+  a {
+    &:hover {
+      background-color: red;
+    }
+  }
+
+  .property {
+    font-family:
+      // "lucida grande", "lucida sans unicode", lucida, "Helvetica Neue", Helvetica, Tahoma, Arial,
+      "lucida grande", lucida, "Helvetica Neue", Helvetica, Tahoma, Arial,
+      "STFangsong", "STSong", "STHeiti", "STKaiti",
+      "FangSong", "SimSun", "NSimSun", "SimHei", "KaiTi", "Microsoft YaHei",
+      "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei",
+      sans-seri;
+    
+    .key {
+      color: blueviolet;
+      font-weight: bold;
+    }
+  
+    .value {
+      color: darkred;
+    }
+  }
+}
